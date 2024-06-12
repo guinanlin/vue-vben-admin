@@ -271,6 +271,14 @@ const feat: AppRouteModule = {
             title: t('routes.demo.excel.importExcel'),
           },
         },
+        {
+          path: 'MyUniverSheet',
+          name: 'MyUniverSheet',
+          component: () => import('@/views/demo/excel/MyUniverSheet.vue'),
+          meta: {
+            title: 'MyUniverSheet',
+          },
+        },
       ],
     },
     {
