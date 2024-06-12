@@ -1,6 +1,10 @@
 import { defineApplicationConfig } from '@vben/vite-config';
+import { univerPlugin } from '@univerjs/vite-plugin';
 
 export default defineApplicationConfig({
+  plugins: [
+    univerPlugin()
+  ],
   overrides: {
     optimizeDeps: {
       include: [
